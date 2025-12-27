@@ -9,7 +9,10 @@ export default function ToggleButton() {
   }
   return (
     <>
-      <button className="toggle-btn" onClick={changeMode}></button>
+      <label htmlFor="">
+        <input type="checkbox" onChange={changeMode} />
+        <span className=""></span>
+      </label>
       <p>{isLightMode ? "LIGHT" : "DARK"} MODE</p>
     </>
   );
