@@ -9,10 +9,10 @@ export default function ToggleButton() {
   }
   return (
     <>
-      <label htmlFor="">
-        <input type="checkbox" onChange={changeMode} />
-        <span className=""></span>
-      </label>
+      <div className="toggle-btn">
+        <input type="checkbox" onChange={changeMode} id="toggle-input" />
+        <span className="slider"></span>
+      </div>
       <p>{isLightMode ? "LIGHT" : "DARK"} MODE</p>
     </>
   );

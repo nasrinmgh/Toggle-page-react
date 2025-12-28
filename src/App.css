@@ -1,6 +1,43 @@
 .toggle-btn {
+  position: relative;
   width: 96px;
   height: 48px;
-  border: 2px solid;
+  border: 2px solid #ccc;
   border-radius: 40px;
+}
+
+#toggle-input {
+  position: absolute;
+  right: 3rem;
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: hidden;
+  opacity: 0;
+  pointer-events: all;
+}
+
+.slider {
+  position: absolute;
+  width: 43%;
+  height: 80%;
+  border: 3px solid #cccccca1;
+  border-radius: 40px;
+  right: 2.9rem;
+  top: 2px;
+  transition: all 350ms ease;
+  pointer-events: none;
+}
+
+input:checked + .slider {
+  position: absolute;
+  width: 42%;
+  height: 80%;
+  border: 3px solid #cccccca1;
+  border-radius: 40px;
+  left: 48%;
+  top: 2px;
+  transition: all 350ms ease;
 }
