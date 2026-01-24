@@ -1,3 +1,12 @@
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+.light {
+  background-color: var(--bg-light);
+}
+
 .toggle-btn {
   position: relative;
   width: 96px;
@@ -21,7 +30,7 @@
 
 .slider {
   position: absolute;
-  width: 43%;
+  width: 42%;
   height: 80%;
   border: 3px solid #cccccca1;
   border-radius: 40px;

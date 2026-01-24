@@ -1,9 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
-export default function ToggleButton() {
-  const [isLightMode, setIsLightMode] = useState(true);
-
+export default function ToggleButton({ isLightMode, setIsLightMode }) {
   function changeMode() {
     setIsLightMode(!isLightMode);
   }
