@@ -1,14 +1,16 @@
-body {
+.light {
   background-color: var(--bg-light);
   color: var(--text-light);
 }
 
-.light {
-  background-color: var(--bg-light);
+.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
 }
 
 .toggle-btn {
   position: relative;
+  left: 37%;
   width: 96px;
   height: 48px;
   border: 2px solid #ccc;

@@ -5,8 +5,8 @@ export default function Header() {
     <>
       <h1>Toggle React</h1>
       <p>
-        A polished day/night theme showcase demonstrating seamless transitions
-        between light and dark modes
+        A polished day/night theme showcase demonstrating <br />
+        seamless transitions between light and dark modes
       </p>
     </>
   );
