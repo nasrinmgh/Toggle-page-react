@@ -1,11 +1,11 @@
-.light {
+/*.light {
   background-color: var(--bg-light);
   color: var(--text-light);
-}
+}*/
 
 .dark {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
 
 .toggle-btn {
@@ -14,7 +14,7 @@
   width: 96px;
   height: 48px;
   border: 2px solid #ccc;
-  border-radius: 40px;
+  border-radius: 50px;
 }
 
 #toggle-input {

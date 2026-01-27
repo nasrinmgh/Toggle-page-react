@@ -1,18 +1,71 @@
 :root {
-  --primary-light: #d97706;
-  --primary-dark: #06b6d4;
-  --secondary-light: #f5f3f0;
-  --secondary-dark: #1c2328;
-  --bg-light: #faf8f5;
-  --bg-dark: #0f1419;
-  --text-light: #1a1614;
-  --text-dark: #e8e6e3;
-  --card-light: #fdfcfa;
-  --card-dark: #151b20;
-  --header-size: 3rem;
-  --header-weight: 900;
-  --title-size: 30px;
-  --subtitle-size: ;
+  /* Light mode */
+  --primary: 28 80% 52%;
+  --primary-foreground: 37 50% 97.5%;
+  --secondary: 37 30% 94%;
+  --secondary-foreground: 20 25% 10%;
+  --background: 37 50% 97.5%;
+  --foreground: 20 25% 10%;
+  --card: 37 30 98.5%;
+  --card-foreground: 20 25% 10%;
+  --popover: 37 30% 98.5%;
+  --popover-foreground: 20 25% 10%;
+  --muted: 37 30% 94%;
+  --muted-foreground: 20 15% 40%;
+  --accent: 28 80% 52%;
+  --accent-foreground: 37 50% 97.5%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 37 50% 97.5%;
+  --border: 37 20% 88%;
+  --input: 37 20% 88%;
+  --ring: 28 80% 52%;
+  --radius: 0.5rem;
+  --gap-2: 0.5rem;
+  --gap-3: 0.75rem;
+  --gap-4: 1rem;
+  --gap-6: 1.5rem;
+  --gap-8: 2rem;
+  --gap-16: 4rem;
+  --gap-24: 6rem;
+  --p-4: 16px (1rem);
+  --p-6: 24px (1.5rem);
+  --p-8: 32px (2rem);
+  --px-6: 24px (1.5rem) horizontal;
+  --py-12: 48px (3rem) vertical;
+  --py-20: 80px (5rem) vertical;
+  --mb-3: 12px (0.75rem);
+  --mb-4: 16px (1rem);
+  --mb-6: 24px (1.5rem);
+  --mt-6: 24px (1.5rem);
+  --mt-8: 32px (2rem);
+  --ml-2: 8px (0.5rem);
+  --mr-2: 8px (0.5rem);
+  --pl-10: 40px (2.5rem);
+  --px-2: 8px (0.5rem);
+  --py-1: 4px (0.25rem);
+}
+
+.dark {
+  /* Dark Mode */
+  --background: 210 30% 6%;
+  --foreground: 40 15% 90%;
+  --card: 210 25% 8%;
+  --card-foreground: 40 15% 90%;
+  --popover: 210 25% 8%;
+  --popover-foreground: 40 15% 90%;
+  --primary: 187 80% 42%;
+  --primary-foreground: 210 30% 6%;
+  --secondary: 210 20% 12%;
+  --secondary-foreground: 40 15% 90%;
+  --muted: 210 20% 12%;
+  --muted-foreground: 40 10% 60%;
+  --accent: 187 80% 42%;
+  --accent-foreground: 210 30% 6%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 40 15% 90%;
+  --border: 210 20% 16%;
+  --input: 210 20% 16%;
+  --ring: 187 80% 42%;
 }
 
 body {
@@ -23,6 +76,58 @@ body {
   text-align: center;
   background-color: var(--bg-light);
   color: var(--text-light);
+}
+
+/* Layout container */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px; /* 2rem */
+  padding-right: 32px; /* 2rem */
+  max-width: 1400px; /* at 2xl breakpoint */
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.body-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.small-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.code-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .fraunces {
