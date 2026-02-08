@@ -1,3 +1,19 @@
+html,
+body {
+  min-height: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   /* Light mode */
   --primary: 28 80% 52%;
@@ -20,6 +36,7 @@
   --input: 37 20% 88%;
   --ring: 28 80% 52%;
   --radius: 0.5rem;
+  /* spacing */
   --gap-2: 0.5rem;
   --gap-3: 0.75rem;
   --gap-4: 1rem;
@@ -69,23 +86,29 @@
 }
 
 body {
+  min-height: 100vh;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  transition:
+    background-color 100ms,
+    color 100ms;
+}
+
+.app {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background-color: var(--bg-light);
-  color: var(--text-light);
 }
 
 /* Layout container */
 .container {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 32px; /* 2rem */
-  padding-right: 32px; /* 2rem */
-  max-width: 1400px; /* at 2xl breakpoint */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
 
 h1 {
