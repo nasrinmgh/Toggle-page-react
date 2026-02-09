@@ -86,6 +86,13 @@ input:checked + .slider {
   transition:
     transform 200ms ease-out,
     colors 500ms ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 226px;
+  gap: var(--gap-2);
 }
 
 .card:hover {
@@ -106,6 +113,50 @@ input:checked + .slider {
     0 4px 6px -4px rgba(6, 182, 212, 0.05);
 }
 
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  width: 450px;
+  height: 40px;
+  transition: colors 150ms ease;
+}
+
+.button-primary {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border: var(--border);
+}
+
+.button-primary:hover {
+  background-color: hsl(var(--primary) / 0.9);
+}
+
+.button-outline {
+  background-color: transparent;
+  border: 1px solid hsl(var(--input));
+}
+
+.button-outline:hover {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+.button-ghost {
+  background-color: transparent;
+  border: transparent;
+}
+
+.button-ghost:hover {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -114,4 +165,25 @@ input:checked + .slider {
   font-size: 12px;
   font-weight: 600;
   transition: colors 500ms ease;
+}
+
+.badge-default {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.badge-secondary {
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+}
+
+.badge-outline {
+  background-color: transparent;
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+}
+
+.badge-destructive {
+  background-color: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
 }

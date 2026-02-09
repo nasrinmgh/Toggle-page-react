@@ -1,12 +1,13 @@
 import React from "react";
-import Badge from "./Badge";
+import Button from "./Button";
 
 export default function Card() {
   return (
     <div className="card">
-      <Badge buttonType={"Primary Action"} />
-      <Badge buttonType={"Secondary"} />
-      <Badge buttonType={" With Icon"} />
+      <h3>Buttons</h3>
+      <Button buttonType={"Primary Action"} className="button-primary" />
+      <Button buttonType={"Secondary"} className="button-outline" />
+      <Button buttonType={" With Icon"} className="button-ghost" />
     </div>
   );
 }
